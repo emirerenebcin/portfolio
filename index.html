@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emir | Bilgisayar Programcısı</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Footer -->
+<footer>
+    <p>© 2026 Emir Eren Ebcin. Tüm hakları saklıdır.</p>
+
+    <div class="footer-linkler">
+        <a href="https://github.com/emirerenebcin" target="_blank">
+            GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/emir-eren-ebcin-b0a415424/" target="_blank">
+            LinkedIn
+        </a>
+    </div>
+</footer>
+
+<body>
+
+    <!-- Menü -->
+    <nav>
+        <h2>Emir Eren</h2>
+
+        <div class="menu">
+            <a href="#iletisim">İletişim</a>
+            <a href="#anasayfa">Ana Sayfa</a>
+            <a href="#hakkimda">Hakkımda</a>
+            <a href="#yetenekler">Yetenekler</a>
+            <a href="#projeler">Projeler</a>
+        </div>
+    </nav>
+
+
+    <!-- Ana Sayfa -->
+    <header id="anasayfa">
+
+        <h1>Emir Eren Ebcin</h1>
+
+        <p>Bilgisayar Programcısı</p>
+
+        <p>
+            Web geliştirme ve yazılım dünyasında
+            kendimi geliştiriyorum.
+        </p>
+
+        <button onclick="projelerGit()">
+            Projelerimi Gör
+        </button>
+
+    </header>
+
+
+    <!-- Hakkımda -->
+    <section id="hakkimda">
+
+        <h2>Hakkımda</h2>
+
+        <p>
+            Bilgisayar Programcılığı mezunuyum.
+            Web geliştirme alanında kendimi geliştiriyor,
+            modern ve kullanıcı dostu web uygulamaları geliştiriyorum.
+        </p>
+
+    </section>
+
+
+    <!-- Yetenekler -->
+    <section id="yetenekler">
+
+        <h2>Yetenekler</h2>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Git & GitHub</li>
+        </ul>
+
+    </section>
+
+
+    <!-- Projeler -->
+    <section id="projeler">
+
+        <h2>Projelerim</h2>
+
+
+        <!-- Hastane Projesi -->
+        <div class="proje">
+
+            <h3>Hastane Randevu Sistemi</h3>
+
+            <p>
+                Hastaların randevu oluşturabildiği,
+                doktorların randevuları yönetebildiği
+                web tabanlı hastane yönetim sistemi.
+            </p>
+
+            <p>
+                Teknolojiler: React, JavaScript, Firebase
+            </p>
+
+            <button onclick="projeGoster('hastane')">
+                Projeyi İncele
+            </button>
+
+        </div>
+
+
+        <!-- Dashboard Projesi -->
+        <div class="proje">
+
+            <h3>Yönetim Dashboard</h3>
+
+            <p>
+                Verilerin grafikler ve tablolar üzerinden
+                görüntülenebildiği modern yönetim paneli.
+            </p>
+
+            <p>
+                Teknolojiler: React, Chart.js, CSS
+            </p>
+
+            <button onclick="projeGoster('dashboard')">
+                Projeyi İncele
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <!-- Proje Detay Penceresi -->
+    <div id="projeModal" class="modal">
+
+        <div class="modal-icerik">
+
+            <span class="modal-kapat" onclick="modalKapat()">&times;</span>
+
+            <h2 id="modalBaslik"></h2>
+
+            <p id="modalAciklama"></p>
+
+            <p id="modalTeknoloji"></p>
+
+            <div class="modal-butonlar">
+
+                <a id="githubLink" href="#" target="_blank">
+                    GitHub
+                </a>
+
+                <a id="demoLink" href="#" target="_blank">
+                    Canlı Demo
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- İletişim -->
+    <section id="iletisim">
+
+        <h2>İletişim</h2>
+
+        <p>
+            Benimle iletişime geçmek veya projelerim hakkında
+            daha fazla bilgi almak için aşağıdaki bağlantılardan
+            bana ulaşabilirsiniz.
+        </p>
+
+        <div class="sosyal-linkler">
+
+            <a href="https://github.com/emirerenebcin" target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/emir-eren-ebcin-b0a415424/" target="_blank">
+                LinkedIn
+            </a>
+
+        </div>
+
+        <form onsubmit="mesajGonder(event)">
+
+            <input type="text" id="isim" placeholder="Adınız" required>
+
+            <input type="email" id="email" placeholder="E-posta adresiniz" required>
+
+            <textarea id="mesaj" placeholder="Mesajınız" rows="5" required></textarea>
+
+            <button type="submit">
+                Mesaj Gönder
+            </button>
+
+        </form>
+
+    </section>
+</body>
+<!-- Footer -->
+<footer>
+    <p>© 2026 Emir Eren Ebcin. Tüm hakları saklıdır.</p>
+
+    <div class="footer-linkler">
+        <a href="https://github.com/emirerenebcin" target="_blank">
+            GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/emir-eren-ebcin-b0a415424/" target="_blank">
+            LinkedIn
+        </a>
+    </div>
+</footer>
+
+</html>
