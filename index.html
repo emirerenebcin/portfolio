@@ -5,24 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Emir | Bilgisayar Programcısı</title>
+    <title>Emir Eren Ebcin | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
-<!-- Footer -->
-<footer>
-    <p>© 2026 Emir Eren Ebcin. Tüm hakları saklıdır.</p>
-
-    <div class="footer-linkler">
-        <a href="https://github.com/emirerenebcin" target="_blank">
-            GitHub
-        </a>
-
-        <a href="https://www.linkedin.com/in/emir-eren-ebcin-b0a415424/" target="_blank">
-            LinkedIn
-        </a>
-    </div>
-</footer>
 
 <body>
 
@@ -31,11 +17,11 @@
         <h2>Emir Eren</h2>
 
         <div class="menu">
-            <a href="#iletisim">İletişim</a>
             <a href="#anasayfa">Ana Sayfa</a>
             <a href="#hakkimda">Hakkımda</a>
             <a href="#yetenekler">Yetenekler</a>
             <a href="#projeler">Projeler</a>
+            <a href="#iletisim">İletişim</a>
         </div>
     </nav>
 
@@ -140,36 +126,6 @@
     </section>
 
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-    <!-- Proje Detay Penceresi -->
-    <div id="projeModal" class="modal">
-
-        <div class="modal-icerik">
-
-            <span class="modal-kapat" onclick="modalKapat()">&times;</span>
-
-            <h2 id="modalBaslik"></h2>
-
-            <p id="modalAciklama"></p>
-
-            <p id="modalTeknoloji"></p>
-
-            <div class="modal-butonlar">
-
-                <a id="githubLink" href="#" target="_blank">
-                    GitHub
-                </a>
-
-                <a id="demoLink" href="#" target="_blank">
-                    Canlı Demo
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
     <!-- İletişim -->
     <section id="iletisim">
 
@@ -183,15 +139,16 @@
 
         <div class="sosyal-linkler">
 
-            <a href="https://github.com/emirerenebcin" target="_blank">
+            <a href="https://github.com/emirerenebcin" target="_blank" rel="noopener noreferrer">
                 GitHub
             </a>
 
-            <a href="https://www.linkedin.com/in/emir-eren-ebcin-b0a415424/" target="_blank">
+            <a href="https://www.linkedin.com/in/emir-eren-ebcin-b0a415424/" target="_blank" rel="noopener noreferrer">
                 LinkedIn
             </a>
 
         </div>
+
 
         <form onsubmit="mesajGonder(event)">
 
@@ -208,20 +165,65 @@
         </form>
 
     </section>
-</body>
-<!-- Footer -->
-<footer>
-    <p>© 2026 Emir Eren Ebcin. Tüm hakları saklıdır.</p>
 
-    <div class="footer-linkler">
-        <a href="https://github.com/emirerenebcin" target="_blank">
-            GitHub
-        </a>
 
-        <a href="https://www.linkedin.com/in/emir-eren-ebcin-b0a415424/" target="_blank">
-            LinkedIn
-        </a>
+    <!-- Proje Detay Penceresi -->
+    <div id="projeModal" class="modal">
+
+        <div class="modal-icerik">
+
+            <span class="modal-kapat" onclick="modalKapat()">
+                &times;
+            </span>
+
+            <h2 id="modalBaslik"></h2>
+
+            <p id="modalAciklama"></p>
+
+            <p id="modalTeknoloji"></p>
+
+            <div class="modal-butonlar">
+
+                <a id="githubLink" href="#" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a id="demoLink" href="#" target="_blank" rel="noopener noreferrer">
+                    Canlı Demo
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
-</footer>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Emir Eren Ebcin. Tüm hakları saklıdır.
+        </p>
+
+        <div class="footer-linkler">
+
+            <a href="https://github.com/emirerenebcin" target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/emir-eren-ebcin-b0a415424/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
 
 </html>
