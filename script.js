@@ -37,11 +37,9 @@ function projeGoster(proje) {
         githubLink.href =
             "https://github.com/emirerenebcin/hastane-randevu-sistemi";
 
-        // Henüz canlı demo yok
         demoLink.href = "#";
 
     }
-
 
     else if (proje === "dashboard") {
 
@@ -58,7 +56,6 @@ function projeGoster(proje) {
         githubLink.href =
             "https://github.com/emirerenebcin/yonetim-dashboard";
 
-        // Henüz canlı demo yok
         demoLink.href = "#";
 
     }
@@ -77,6 +74,28 @@ function modalKapat() {
 }
 
 
+// Modal dışına tıklayınca kapat
+window.addEventListener("click", function (event) {
+
+    const modal = document.getElementById("projeModal");
+
+    if (event.target === modal) {
+        modalKapat();
+    }
+
+});
+
+
+// ESC tuşuyla modal kapat
+document.addEventListener("keydown", function (event) {
+
+    if (event.key === "Escape") {
+        modalKapat();
+    }
+
+});
+
+
 // İletişim formu
 function mesajGonder(event) {
 
@@ -90,4 +109,5 @@ function mesajGonder(event) {
         "Mesajınız başarıyla alındı."
     );
 
+    event.target.reset();
 }
