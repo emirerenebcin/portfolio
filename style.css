@@ -1,3 +1,7 @@
+/* =========================
+   GENEL AYARLAR
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -63,7 +67,7 @@ nav h2 {
 
 
 /* =========================
-   HERO / ANA SAYFA
+   HERO
 ========================= */
 
 header {
@@ -127,6 +131,11 @@ header h2 {
     line-height: 1.8;
 }
 
+
+/* =========================
+   HERO BUTONLARI
+========================= */
+
 .hero-butonlar {
     display: flex;
 
@@ -140,45 +149,9 @@ header h2 {
     margin-top: 35px;
 }
 
-
-/* =========================
-   BUTONLAR
-========================= */
-
-button {
-    margin-top: 20px;
-
-    padding: 14px 28px;
-
-    background-color: #2563eb;
-    color: white;
-
-    border: none;
-
-    border-radius: 8px;
-
-    font-size: 16px;
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #1d4ed8;
-
-    transform: translateY(-2px);
-}
-
 .hero-butonlar button {
     margin-top: 0;
 }
-
-
-/* =========================
-   HERO LİNKLERİ
-========================= */
 
 .hero-link {
     display: inline-block;
@@ -219,6 +192,37 @@ button:hover {
 
 
 /* =========================
+   GENEL BUTON
+========================= */
+
+button {
+    margin-top: 20px;
+
+    padding: 14px 28px;
+
+    background-color: #2563eb;
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
    BÖLÜMLER
 ========================= */
 
@@ -248,12 +252,18 @@ section p {
     font-size: 17px;
 }
 
+.bolum-aciklama {
+    color: #64748b;
+
+    margin-bottom: 10px;
+}
+
 
 /* =========================
    YETENEKLER
 ========================= */
 
-ul {
+.yetenek-listesi {
     list-style: none;
 
     display: flex;
@@ -262,7 +272,7 @@ ul {
     gap: 12px;
 }
 
-li {
+.yetenek-listesi li {
     background-color: #e0f2fe;
     color: #0369a1;
 
@@ -275,39 +285,143 @@ li {
 
 
 /* =========================
-   PROJELER
+   PROJE GRID
 ========================= */
 
-.proje {
+.projeler-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================
+   PROJE KARTI
+========================= */
+
+.proje-kart {
+    background-color: #f8fafc;
+
     border: 1px solid #e2e8f0;
 
-    padding: 25px;
+    border-radius: 16px;
 
-    margin-top: 20px;
-
-    border-radius: 12px;
-
-    background-color: #f8fafc;
+    padding: 30px;
 
     transition: 0.3s;
 }
 
-.proje:hover {
-    transform: translateY(-5px);
+.proje-kart:hover {
+    transform: translateY(-8px);
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
-.proje h3 {
+.proje-ust {
+    margin-bottom: 18px;
+}
+
+.proje-etiket {
+    display: inline-block;
+
+    background-color: #dbeafe;
+    color: #1d4ed8;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.proje-kart h3 {
     font-size: 24px;
 
-    margin-bottom: 10px;
+    color: #0f172a;
 
-    color: #1e3a8a;
+    margin-bottom: 15px;
 }
 
-.proje p {
-    margin-bottom: 10px;
+.proje-kart p {
+    color: #475569;
+
+    margin-bottom: 20px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   TEKNOLOJİ ETİKETLERİ
+========================= */
+
+.teknolojiler {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+}
+
+.teknolojiler span {
+    background-color: #e0f2fe;
+    color: #0369a1;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   PROJE BUTONLARI
+========================= */
+
+.proje-butonlar {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.proje-butonlar button {
+    margin-top: 0;
+}
+
+.proje-link {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background-color: #0f172a;
+    color: white;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.proje-link:hover {
+    background-color: #334155;
+
+    transform: translateY(-2px);
 }
 
 
@@ -402,6 +516,8 @@ li {
     gap: 15px;
 
     margin-top: 25px;
+
+    flex-wrap: wrap;
 }
 
 .modal-butonlar a {
@@ -449,6 +565,8 @@ li {
     gap: 15px;
 
     margin-bottom: 30px;
+
+    flex-wrap: wrap;
 }
 
 .sosyal-linkler a {
@@ -473,6 +591,11 @@ li {
 
     transform: translateY(-2px);
 }
+
+
+/* =========================
+   FORM
+========================= */
 
 form {
     display: flex;
@@ -620,11 +743,20 @@ footer p {
         font-size: 28px;
     }
 
-    .sosyal-linkler {
+    .projeler-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proje-kart {
+        padding: 22px;
+    }
+
+    .proje-butonlar {
         flex-wrap: wrap;
     }
 
     .modal-butonlar {
         flex-direction: column;
     }
+
 }

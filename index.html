@@ -12,7 +12,7 @@
 
 <body>
 
-    <!-- Menü -->
+    <!-- NAVBAR -->
     <nav>
         <h2>Emir Eren</h2>
 
@@ -26,16 +26,22 @@
     </nav>
 
 
-    <!-- Ana Sayfa -->
+    <!-- ANA SAYFA -->
     <header id="anasayfa">
 
         <div class="hero-icerik">
 
-            <p class="hero-kucuk">Merhaba, ben</p>
+            <p class="hero-kucuk">
+                Merhaba, ben
+            </p>
 
-            <h1>Emir Eren Ebcin</h1>
+            <h1>
+                Emir Eren Ebcin
+            </h1>
 
-            <h2>Bilgisayar Programcısı & Web Developer</h2>
+            <h2>
+                Bilgisayar Programcısı & Web Developer
+            </h2>
 
             <p class="hero-aciklama">
                 Modern, kullanıcı dostu ve işlevsel web uygulamaları
@@ -66,7 +72,7 @@
     </header>
 
 
-    <!-- Hakkımda -->
+    <!-- HAKKIMDA -->
     <section id="hakkimda">
 
         <h2>Hakkımda</h2>
@@ -75,79 +81,130 @@
             Bilgisayar Programcılığı mezunuyum.
             Web geliştirme alanında kendimi geliştiriyor,
             modern ve kullanıcı dostu web uygulamaları geliştiriyorum.
+            Özellikle JavaScript ve React teknolojileri üzerine
+            çalışmalar yapıyorum.
         </p>
 
     </section>
 
 
-    <!-- Yetenekler -->
+    <!-- YETENEKLER -->
     <section id="yetenekler">
 
         <h2>Yetenekler</h2>
 
-        <ul>
+        <ul class="yetenek-listesi">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
             <li>React</li>
-            <li>Git & GitHub</li>
+            <li>Firebase</li>
+            <li>Git</li>
+            <li>GitHub</li>
         </ul>
 
     </section>
 
 
-    <!-- Projeler -->
+    <!-- PROJELER -->
     <section id="projeler">
 
         <h2>Projelerim</h2>
 
-
-        <!-- Hastane Projesi -->
-        <div class="proje">
-
-            <h3>Hastane Randevu Sistemi</h3>
-
-            <p>
-                Hastaların randevu oluşturabildiği,
-                doktorların randevuları yönetebildiği
-                web tabanlı hastane yönetim sistemi.
-            </p>
-
-            <p>
-                Teknolojiler: React, JavaScript, Firebase
-            </p>
-
-            <button onclick="projeGoster('hastane')">
-                Projeyi İncele
-            </button>
-
-        </div>
+        <p class="bolum-aciklama">
+            Geliştirdiğim bazı web uygulamaları ve çalışmalar.
+        </p>
 
 
-        <!-- Dashboard Projesi -->
-        <div class="proje">
+        <div class="projeler-grid">
 
-            <h3>Yönetim Dashboard</h3>
+            <!-- HASTANE PROJESİ -->
+            <div class="proje-kart">
 
-            <p>
-                Verilerin grafikler ve tablolar üzerinden
-                görüntülenebildiği modern yönetim paneli.
-            </p>
+                <div class="proje-ust">
+                    <span class="proje-etiket">
+                        Web Uygulaması
+                    </span>
+                </div>
 
-            <p>
-                Teknolojiler: React, Chart.js, CSS
-            </p>
+                <h3>
+                    Hastane Randevu Sistemi
+                </h3>
 
-            <button onclick="projeGoster('dashboard')">
-                Projeyi İncele
-            </button>
+                <p>
+                    Hastaların kayıt olabildiği, randevu oluşturabildiği,
+                    doktorların randevuları ve reçeteleri yönetebildiği
+                    web tabanlı hastane yönetim sistemi.
+                </p>
+
+                <div class="teknolojiler">
+                    <span>React</span>
+                    <span>JavaScript</span>
+                    <span>Firebase</span>
+                </div>
+
+                <div class="proje-butonlar">
+
+                    <button onclick="projeGoster('hastane')">
+                        Detayları Gör
+                    </button>
+
+                    <a href="https://github.com/emirerenebcin" target="_blank" rel="noopener noreferrer"
+                        class="proje-link">
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- DASHBOARD PROJESİ -->
+            <div class="proje-kart">
+
+                <div class="proje-ust">
+                    <span class="proje-etiket">
+                        Dashboard
+                    </span>
+                </div>
+
+                <h3>
+                    Yönetim Dashboard
+                </h3>
+
+                <p>
+                    Verilerin grafikler, tablolar ve özet kartları
+                    üzerinden görüntülenebildiği modern ve kullanıcı
+                    dostu yönetim paneli.
+                </p>
+
+                <div class="teknolojiler">
+                    <span>React</span>
+                    <span>Chart.js</span>
+                    <span>CSS</span>
+                </div>
+
+                <div class="proje-butonlar">
+
+                    <button onclick="projeGoster('dashboard')">
+                        Detayları Gör
+                    </button>
+
+                    <a href="https://github.com/emirerenebcin" target="_blank" rel="noopener noreferrer"
+                        class="proje-link">
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- İletişim -->
+    <!-- İLETİŞİM -->
     <section id="iletisim">
 
         <h2>İletişim</h2>
@@ -157,6 +214,7 @@
             daha fazla bilgi almak için aşağıdaki bağlantılardan
             bana ulaşabilirsiniz.
         </p>
+
 
         <div class="sosyal-linkler">
 
@@ -188,7 +246,7 @@
     </section>
 
 
-    <!-- Proje Detay Modalı -->
+    <!-- PROJE DETAY MODALI -->
     <div id="projeModal" class="modal">
 
         <div class="modal-icerik">
@@ -202,6 +260,7 @@
             <p id="modalAciklama"></p>
 
             <p id="modalTeknoloji"></p>
+
 
             <div class="modal-butonlar">
 
@@ -220,7 +279,7 @@
     </div>
 
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
 
         <p>
@@ -242,6 +301,7 @@
     </footer>
 
 
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
