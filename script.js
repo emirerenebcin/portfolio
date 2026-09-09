@@ -35,8 +35,9 @@ function projeGoster(proje) {
             "Teknolojiler: React, JavaScript, Firebase";
 
         githubLink.href =
-            "https://github.com/emirerenebcin";
+            "https://github.com/emirerenebcin/hastane-randevu-sistemi";
 
+        // Henüz canlı demo yok
         demoLink.href = "#";
 
     }
@@ -55,8 +56,9 @@ function projeGoster(proje) {
             "Teknolojiler: React, Chart.js, CSS";
 
         githubLink.href =
-            "https://github.com/emirerenebcin";
+            "https://github.com/emirerenebcin/yonetim-dashboard";
 
+        // Henüz canlı demo yok
         demoLink.href = "#";
 
     }
