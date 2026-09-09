@@ -29,18 +29,39 @@
     <!-- Ana Sayfa -->
     <header id="anasayfa">
 
-        <h1>Emir Eren Ebcin</h1>
+        <div class="hero-icerik">
 
-        <p>Bilgisayar Programcısı</p>
+            <p class="hero-kucuk">Merhaba, ben</p>
 
-        <p>
-            Web geliştirme ve yazılım dünyasında
-            kendimi geliştiriyorum.
-        </p>
+            <h1>Emir Eren Ebcin</h1>
 
-        <button onclick="projelerGit()">
-            Projelerimi Gör
-        </button>
+            <h2>Bilgisayar Programcısı & Web Developer</h2>
+
+            <p class="hero-aciklama">
+                Modern, kullanıcı dostu ve işlevsel web uygulamaları
+                geliştiriyorum. JavaScript, React ve web teknolojileri
+                üzerine kendimi geliştirmeye devam ediyorum.
+            </p>
+
+            <div class="hero-butonlar">
+
+                <button onclick="projelerGit()">
+                    Projelerimi Gör
+                </button>
+
+                <a href="https://github.com/emirerenebcin" target="_blank" rel="noopener noreferrer"
+                    class="hero-link github">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/emir-eren-ebcin-b0a415424/" target="_blank"
+                    rel="noopener noreferrer" class="hero-link linkedin">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
 
     </header>
 
@@ -167,7 +188,7 @@
     </section>
 
 
-    <!-- Proje Detay Penceresi -->
+    <!-- Proje Detay Modalı -->
     <div id="projeModal" class="modal">
 
         <div class="modal-icerik">
@@ -221,7 +242,6 @@
     </footer>
 
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>
