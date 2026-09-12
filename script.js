@@ -27,9 +27,9 @@ function projeGoster(proje) {
             "Hastane Randevu Sistemi";
 
         aciklama.innerText =
-            "Hastaların kayıt olabildiği, randevu oluşturabildiği, " +
-            "doktorların randevuları ve reçeteleri yönetebildiği " +
-            "web tabanlı hastane yönetim sistemi.";
+            "Hastaların randevu oluşturabildiği, doktorların hasta kayıtlarını, " +
+            "randevuları ve reçeteleri yönetebildiği web tabanlı " +
+            "hastane yönetim sistemi.";
 
         teknoloji.innerText =
             "Teknolojiler: React, JavaScript, Firebase";
@@ -37,7 +37,10 @@ function projeGoster(proje) {
         githubLink.href =
             "https://github.com/emirerenebcin/hastane-randevu-sistemi";
 
-        demoLink.href = "#";
+        demoLink.href =
+            "https://hastane-randevu-sistemi-liart.vercel.app";
+
+        demoLink.style.display = "inline-block";
 
     }
 
@@ -56,7 +59,9 @@ function projeGoster(proje) {
         githubLink.href =
             "https://github.com/emirerenebcin/yonetim-dashboard";
 
+        // Dashboard için henüz canlı demo olmadığı için gizliyoruz
         demoLink.href = "#";
+        demoLink.style.display = "none";
 
     }
 
@@ -110,4 +115,5 @@ function mesajGonder(event) {
     );
 
     event.target.reset();
+
 }
