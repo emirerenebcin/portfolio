@@ -117,4 +117,4 @@ function mesajGonder(event) {
 
     event.target.reset();
 
-}
+}   
