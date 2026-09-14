@@ -50,18 +50,19 @@ function projeGoster(proje) {
             "Yönetim Dashboard";
 
         aciklama.innerText =
-            "Verilerin grafikler, tablolar ve özet kartları " +
-            "üzerinden görüntülenebildiği modern yönetim paneli.";
+            "Verilerin grafikler, tablolar, filtreler ve özet kartları " +
+            "üzerinden görüntülenebildiği modern ve etkileşimli yönetim paneli.";
 
         teknoloji.innerText =
-            "Teknolojiler: React, Chart.js, CSS";
+            "Teknolojiler: React, Vite, Chart.js, JavaScript, CSS";
 
         githubLink.href =
             "https://github.com/emirerenebcin/yonetim-dashboard";
 
-        // Dashboard için henüz canlı demo olmadığı için gizliyoruz
-        demoLink.href = "#";
-        demoLink.style.display = "none";
+        demoLink.href =
+            "https://yonetim-dashboard.vercel.app/";
+
+        demoLink.style.display = "inline-block";
 
     }
 
